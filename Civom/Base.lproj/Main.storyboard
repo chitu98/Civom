@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Civom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="civom_logo_lowres" translatesAutoresizingMaskIntoConstraints="NO" id="60w-Oa-8RY">
+                                <rect key="frame" x="132" y="151" width="150" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="BCQ-vh-te6"/>
+                                    <constraint firstAttribute="width" constant="150" id="hTP-02-Pth"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="115" id="poI-1D-bfe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="sed-cB-XCr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpX-rf-iXL">
+                                <rect key="frame" x="111" y="393" width="195" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="DoS-eE-GLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.28235294117647058" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By LateralX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B44-EN-1FW">
+                                <rect key="frame" x="71" y="823" width="272" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="bON-83-2pG"/>
+                                    <constraint firstAttribute="width" constant="272" id="z8F-SQ-dD9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+ 91 " adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DpZ-uu-ntp">
+                                <rect key="frame" x="65" y="439" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="2yo-m7-iHM"/>
+                                    <constraint firstAttribute="height" constant="30" id="5nL-ZD-M3K"/>
+                                </constraints>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" returnKeyType="done" textContentType="tel"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Textbox border" translatesAutoresizingMaskIntoConstraints="NO" id="Zgx-rq-Fbk">
+                                <rect key="frame" x="52" y="427" width="310" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="nfw-Hf-xtn"/>
+                                    <constraint firstAttribute="height" constant="57" id="uaJ-Rj-x4D"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Or" translatesAutoresizingMaskIntoConstraints="NO" id="rr6-A1-TLh">
+                                <rect key="frame" x="57" y="485" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bdj-aS-xTj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google Sign in" translatesAutoresizingMaskIntoConstraints="NO" id="6P0-ZY-UTt">
+                                <rect key="frame" x="75" y="543" width="260" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Fsl-A3-onw"/>
+                                    <constraint firstAttribute="width" constant="260" id="Qnf-dW-p8R"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zgx-rq-Fbk" firstAttribute="centerX" secondItem="6P0-ZY-UTt" secondAttribute="centerX" constant="2" id="2pW-Ya-tkK"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="B44-EN-1FW" secondAttribute="bottom" constant="15" id="5Qj-0a-1hO"/>
+                            <constraint firstItem="Zgx-rq-Fbk" firstAttribute="top" secondItem="cpX-rf-iXL" secondAttribute="bottom" constant="14" id="Evr-rj-i2X"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="rr6-A1-TLh" secondAttribute="trailing" constant="57" id="Fsn-S4-Qoa"/>
+                            <constraint firstItem="Zgx-rq-Fbk" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="52" id="GiN-W0-mCw"/>
+                            <constraint firstItem="cpX-rf-iXL" firstAttribute="centerX" secondItem="60w-Oa-8RY" secondAttribute="centerX" constant="1.5" id="JbS-AA-dgk"/>
+                            <constraint firstItem="6P0-ZY-UTt" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="75" id="PuG-ad-vcO"/>
+                            <constraint firstItem="DpZ-uu-ntp" firstAttribute="centerY" secondItem="U0K-SW-4ec" secondAttribute="centerY" constant="6" id="SOL-1h-QGh"/>
+                            <constraint firstItem="Zgx-rq-Fbk" firstAttribute="top" secondItem="cpX-rf-iXL" secondAttribute="bottom" constant="14" id="Soa-k2-3xG"/>
+                            <constraint firstItem="B44-EN-1FW" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="71" id="VUv-A1-hYN"/>
+                            <constraint firstItem="rr6-A1-TLh" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="57" id="e5u-tS-2cl"/>
+                            <constraint firstItem="cpX-rf-iXL" firstAttribute="centerX" secondItem="B44-EN-1FW" secondAttribute="centerX" constant="1.5" id="eZP-ga-cDW"/>
+                            <constraint firstItem="DpZ-uu-ntp" firstAttribute="top" secondItem="cpX-rf-iXL" secondAttribute="bottom" constant="26" id="kbf-Ix-m6b"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="B44-EN-1FW" secondAttribute="trailing" constant="71" id="l8z-c5-NwR"/>
+                            <constraint firstItem="B44-EN-1FW" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="rfp-xN-La0"/>
+                            <constraint firstItem="cpX-rf-iXL" firstAttribute="top" secondItem="60w-Oa-8RY" secondAttribute="bottom" constant="127" id="rua-92-zFf"/>
+                            <constraint firstItem="rr6-A1-TLh" firstAttribute="top" secondItem="DpZ-uu-ntp" secondAttribute="bottom" constant="16" id="tKf-IL-khX"/>
+                            <constraint firstItem="B44-EN-1FW" firstAttribute="top" secondItem="6P0-ZY-UTt" secondAttribute="bottom" constant="220" id="zFd-50-AJG"/>
+                            <constraint firstItem="DpZ-uu-ntp" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="65" id="zgv-IU-KF7"/>
+                            <constraint firstItem="60w-Oa-8RY" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="107" id="zqG-ru-4CC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Google Sign in" width="747" height="138"/>
+        <image name="Or" width="267" height="16"/>
+        <image name="Textbox border" width="747" height="137"/>
+        <image name="civom_logo_lowres" width="97" height="92"/>
+    </resources>
+</document>
