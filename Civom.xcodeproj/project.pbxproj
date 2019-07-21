@@ -16,6 +16,8 @@
 		8E12E34322DF21DE009422A4 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12E34222DF21DE009422A4 /* LaunchScreenController.swift */; };
 		8E12E37022DF2A27009422A4 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */; };
 		8E12E42822E05FBB009422A4 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */; };
+		8E14ED0822E1F32200DE4988 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14ED0722E1F32200DE4988 /* CollectionViewCell.swift */; };
+		8E1AE0D922E5093500E745E0 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8E12E34222DF21DE009422A4 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		8E14ED0722E1F32200DE4988 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 				8E12E33722DF07C6009422A4 /* LaunchScreen.storyboard */,
 				8E12E33A22DF07C6009422A4 /* Info.plist */,
 				8E12E34222DF21DE009422A4 /* LaunchScreenController.swift */,
+				8E14ED0722E1F32200DE4988 /* CollectionViewCell.swift */,
 			);
 			path = Civom;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 		8E12E3D822E052B1009422A4 /* font */ = {
 			isa = PBXGroup;
 			children = (
+				8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */,
 				8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */,
 			);
 			path = font;
@@ -142,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1AE0D922E5093500E745E0 /* Montserrat-ExtraBold.otf in Resources */,
 				8E12E42822E05FBB009422A4 /* Montserrat-Light.ttf in Resources */,
 				8E12E32F22DF07C3009422A4 /* art.scnassets in Resources */,
 				8E12E33922DF07C6009422A4 /* LaunchScreen.storyboard in Resources */,
@@ -160,6 +167,7 @@
 			files = (
 				8E12E34322DF21DE009422A4 /* LaunchScreenController.swift in Sources */,
 				8E12E33122DF07C3009422A4 /* ViewController.swift in Sources */,
+				8E14ED0822E1F32200DE4988 /* CollectionViewCell.swift in Sources */,
 				8E12E32D22DF07C3009422A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

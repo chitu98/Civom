@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    // test item
+    
+    let items = ["1","2","3","4","5","6","7","8","9","10",]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,12 +21,9 @@ class ViewController: UIViewController {
         //self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: Selector("endEditing:")))
         
         self.HideKeyboard()
-        
-        //testcode
-       
-      
     }
 }
+
 
 extension UIViewController {
     func HideKeyboard() {
