@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3F8-g7-rIm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="94E-IQ-mhL">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
         <array key="Montserrat-ExtraBold.otf">
             <string>Montserrat-ExtraBold</string>
         </array>
@@ -69,6 +72,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="gcJ-lG-U4z"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="Qjs-L4-snb" kind="show" id="3rA-C7-kqC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By LateralX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B44-EN-1FW">
                                 <rect key="frame" x="52" y="831" width="310" height="21"/>
@@ -132,7 +138,7 @@
                                                 <rect key="frame" x="22" y="52" width="374" height="180"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUf-y6-YIb" userLabel="WhyCivomBtn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="180"/>
                                                         <state key="normal" backgroundImage="whycivom"/>
                                                         <connections>
                                                             <segue destination="BV1-FR-VrT" kind="show" id="r49-Ej-wOp"/>
@@ -148,13 +154,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read our story for the love of furniture!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxc-yY-RlP">
-                                                        <rect key="frame" x="15" y="114.5" width="345" height="18.5"/>
+                                                        <rect key="frame" x="15" y="114.5" width="344" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
                                                         <color key="textColor" red="0.46274509800000002" green="0.4823529412" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fwd_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="FL4-4P-cKw">
-                                                        <rect key="frame" x="310" y="42" width="50" height="50.5"/>
+                                                        <rect key="frame" x="310" y="42" width="49" height="50.5"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -856,6 +862,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="fVL-1D-079" kind="showDetail" id="Vgf-q3-Pzs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v02-kx-Ein" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
                                 <rect key="frame" x="260" y="762" width="141" height="37"/>
@@ -967,6 +976,325 @@
             </objects>
             <point key="canvasLocation" x="1539" y="21"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="GjI-1g-LIv">
+            <objects>
+                <viewController id="fVL-1D-079" customClass="CollectionViewController" customModule="Civom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rj8-MJ-FwU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P88-Jf-uou">
+                                <rect key="frame" x="0.0" y="44" width="77" height="852"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soft Seating " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwB-np-Q95">
+                                <rect key="frame" x="36" y="97" width="335" height="46"/>
+                                <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="40"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP2-9O-9hd" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
+                                <rect key="frame" x="86" y="151" width="153" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="Vaa-KX-7tx"/>
+                                    <constraint firstAttribute="height" constant="37" id="xCK-Je-gvL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Cave Seating">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInset">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S72-3K-qSg" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
+                                <rect key="frame" x="86" y="197" width="226" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="DCq-uq-nI8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Cushions &amp; Bean Bags">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInset">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-bf-Fp1" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
+                                <rect key="frame" x="247" y="151" width="155" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="fV3-0C-A5u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Sofa Seating">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInset">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRu-Jh-amF" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
+                                <rect key="frame" x="258" y="242" width="141" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="caZ-fT-AeH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Ottomans">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInset">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G0W-mn-WWN">
+                                <rect key="frame" x="0.0" y="307" width="414" height="481"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="klH-zN-NGA">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="auc-xy-wHR">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fVL-1D-079" id="HNU-lX-NYv"/>
+                                    <outlet property="delegate" destination="fVL-1D-079" id="1EG-yU-PaM"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7g-Ba-cB9" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
+                                <rect key="frame" x="86" y="242" width="167" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="iSf-UJ-cwS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Lounge Chairs">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="Lounge Chair">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInset">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G0W-mn-WWN" firstAttribute="bottom" secondItem="nFq-lb-42v" secondAttribute="bottom" constant="-74" id="0B7-13-kJP"/>
+                            <constraint firstItem="G0W-mn-WWN" firstAttribute="leading" secondItem="nFq-lb-42v" secondAttribute="leading" id="1EP-l3-F9q"/>
+                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="top" secondItem="dRu-Jh-amF" secondAttribute="top" id="1oB-zL-90c"/>
+                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="top" secondItem="S72-3K-qSg" secondAttribute="bottom" constant="8" symbolic="YES" id="340-32-WBB"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="baseline" secondItem="U8G-bf-Fp1" secondAttribute="firstBaseline" id="5BH-e5-iDC"/>
+                            <constraint firstItem="P88-Jf-uou" firstAttribute="top" secondItem="nFq-lb-42v" secondAttribute="top" id="5df-dP-t1n"/>
+                            <constraint firstItem="S72-3K-qSg" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="9" id="8vc-ZY-VOI"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="top" secondItem="uwB-np-Q95" secondAttribute="bottom" constant="8" symbolic="YES" id="BBe-9k-tck"/>
+                            <constraint firstItem="P88-Jf-uou" firstAttribute="leading" secondItem="rj8-MJ-FwU" secondAttribute="leading" id="C33-9I-vvS"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="dRu-Jh-amF" secondAttribute="trailing" constant="15" id="CFr-74-uJz"/>
+                            <constraint firstItem="dRu-Jh-amF" firstAttribute="leading" secondItem="e7g-Ba-cB9" secondAttribute="trailing" constant="5" id="Cye-VW-8Lv"/>
+                            <constraint firstAttribute="trailing" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="337" id="DRZ-kA-89n"/>
+                            <constraint firstItem="U8G-bf-Fp1" firstAttribute="baseline" secondItem="xP2-9O-9hd" secondAttribute="firstBaseline" id="FtR-i5-CPk"/>
+                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="baseline" secondItem="dRu-Jh-amF" secondAttribute="firstBaseline" id="GTX-P9-kwA"/>
+                            <constraint firstAttribute="bottom" secondItem="P88-Jf-uou" secondAttribute="bottom" id="H7F-af-2VQ"/>
+                            <constraint firstItem="uwB-np-Q95" firstAttribute="leading" secondItem="nFq-lb-42v" secondAttribute="leading" constant="36" id="Ix8-be-P4W"/>
+                            <constraint firstItem="G0W-mn-WWN" firstAttribute="top" secondItem="e7g-Ba-cB9" secondAttribute="bottom" constant="28" id="Kra-ND-OrW"/>
+                            <constraint firstItem="U8G-bf-Fp1" firstAttribute="leading" secondItem="xP2-9O-9hd" secondAttribute="trailing" constant="8" symbolic="YES" id="PH0-sK-V2u"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="top" secondItem="U8G-bf-Fp1" secondAttribute="top" id="QyI-IA-fmu"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="S72-3K-qSg" secondAttribute="trailing" constant="102" id="T5q-qj-9GD"/>
+                            <constraint firstItem="dRu-Jh-amF" firstAttribute="baseline" secondItem="e7g-Ba-cB9" secondAttribute="firstBaseline" id="UJP-G4-JfM"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="9" id="bIN-RX-QD5"/>
+                            <constraint firstItem="G0W-mn-WWN" firstAttribute="trailing" secondItem="nFq-lb-42v" secondAttribute="trailing" id="gdQ-ff-ZfQ"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="bottom" secondItem="e7g-Ba-cB9" secondAttribute="bottom" constant="583" id="izN-gA-Hp0"/>
+                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="9" id="nqg-f6-RDI"/>
+                            <constraint firstItem="uwB-np-Q95" firstAttribute="top" secondItem="nFq-lb-42v" secondAttribute="top" constant="53" id="oNh-pY-oPS"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="uwB-np-Q95" secondAttribute="trailing" constant="43" id="wcg-OA-ESK"/>
+                            <constraint firstItem="S72-3K-qSg" firstAttribute="top" secondItem="xP2-9O-9hd" secondAttribute="bottom" constant="9" id="zNm-g1-C1x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nFq-lb-42v"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="G0W-mn-WWN" id="5KP-h1-jJH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gd-Ql-yB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2339.130434782609" y="20.758928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="10A-Pg-Am6">
+            <objects>
+                <viewController id="94E-IQ-mhL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yBO-TU-mC9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mh-yv-YhX">
+                                <rect key="frame" x="0.0" y="589" width="414" height="758"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGB-8j-Oq6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="680"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPu-LB-ksc" userLabel="labelTitle">
+                                                <rect key="frame" x="57" y="40" width="315" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Vep-6D-4hF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg2-c8-4Vz" userLabel="labelDesc">
+                                                <rect key="frame" x="57" y="106" width="315" height="241"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="241" id="zNO-rp-LsG"/>
+                                                </constraints>
+                                                <string key="text">The perfect story time chair in your children’s area.
+
+Description
+1. The perfect story time chair in your children’s area. Mode with fabric, which is easy to clean.
+2. Swivels for flexible movement and has comfortable armrests to reduce fatigue.
+
+Story Chair
+770 W x 700 D x 1080 H mm
+Seat height 450mm</string>
+                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZPu-LB-ksc" firstAttribute="top" secondItem="FGB-8j-Oq6" secondAttribute="top" constant="40" id="59f-sp-DCs"/>
+                                            <constraint firstItem="Hg2-c8-4Vz" firstAttribute="trailing" secondItem="ZPu-LB-ksc" secondAttribute="trailing" id="C4s-wS-sZ9"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZPu-LB-ksc" secondAttribute="trailing" constant="42" id="Wmn-tc-D9w"/>
+                                            <constraint firstItem="ZPu-LB-ksc" firstAttribute="leading" secondItem="FGB-8j-Oq6" secondAttribute="leading" constant="57" id="aa9-lU-uOo"/>
+                                            <constraint firstItem="Hg2-c8-4Vz" firstAttribute="leading" secondItem="ZPu-LB-ksc" secondAttribute="leading" id="jTB-WL-niR"/>
+                                            <constraint firstItem="Hg2-c8-4Vz" firstAttribute="top" secondItem="ZPu-LB-ksc" secondAttribute="bottom" constant="16" id="kc6-gU-PHs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-my-gnt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="547"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="547" id="4fa-1z-yuM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_storychair" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-Rm-beU">
+                                <rect key="frame" x="87" y="283" width="240" height="308"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PKc-Rm-beU" firstAttribute="top" secondItem="9OC-cc-xV6" secondAttribute="top" constant="239" id="DGK-rF-5IY"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="top" secondItem="9OC-cc-xV6" secondAttribute="top" constant="545" id="Gv4-sP-Cne"/>
+                            <constraint firstItem="PKc-Rm-beU" firstAttribute="centerX" secondItem="VCr-my-gnt" secondAttribute="centerX" id="K0v-zg-car"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="trailing" secondItem="VCr-my-gnt" secondAttribute="trailing" id="Zp3-S2-NaA"/>
+                            <constraint firstAttribute="trailing" secondItem="VCr-my-gnt" secondAttribute="trailing" id="eI4-Zd-MLc"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="leading" secondItem="VCr-my-gnt" secondAttribute="leading" id="mI3-YR-BiP"/>
+                            <constraint firstItem="VCr-my-gnt" firstAttribute="leading" secondItem="yBO-TU-mC9" secondAttribute="leading" id="nbl-MI-Ku2"/>
+                            <constraint firstItem="PKc-Rm-beU" firstAttribute="leading" secondItem="9OC-cc-xV6" secondAttribute="leading" constant="87" id="qZq-Xi-Pgk"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="top" secondItem="PKc-Rm-beU" secondAttribute="bottom" constant="-2" id="uhO-8R-LlL"/>
+                            <constraint firstAttribute="bottom" secondItem="6mh-yv-YhX" secondAttribute="bottom" constant="-451" id="x7d-F0-mPm"/>
+                            <constraint firstItem="VCr-my-gnt" firstAttribute="top" secondItem="9OC-cc-xV6" secondAttribute="top" id="zU2-yp-yMO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9OC-cc-xV6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpP-jz-MPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3115.9420289855075" y="14.732142857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Google Sign in" width="747" height="138"/>
@@ -976,8 +1304,13 @@
         <image name="civom_logo_lowres" width="97" height="92"/>
         <image name="contact" width="984" height="250"/>
         <image name="fwd_arrow" width="152.5" height="110.5"/>
+        <image name="product_background" width="1080" height="1656.5"/>
+        <image name="product_storychair" width="783" height="1075"/>
         <image name="products" width="480" height="480"/>
         <image name="testimonials" width="480" height="480"/>
         <image name="whycivom" width="984" height="480"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3rA-C7-kqC"/>
+    </inferredMetricsTieBreakers>
 </document>

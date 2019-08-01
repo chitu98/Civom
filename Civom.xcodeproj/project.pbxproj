@@ -17,6 +17,11 @@
 		8E12E37022DF2A27009422A4 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */; };
 		8E12E42822E05FBB009422A4 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */; };
 		8E1AE0D922E5093500E745E0 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */; };
+		8E43636222E9DA2F009A62EE /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E43636122E9DA2F009A62EE /* UPCarouselFlowLayout.swift */; };
+		8E43636522E9DAD0009A62EE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E43636322E9DAD0009A62EE /* CollectionViewCell.swift */; };
+		8E43636622E9DAD0009A62EE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E43636422E9DAD0009A62EE /* CollectionViewCell.xib */; };
+		8E43636822E9DD4E009A62EE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E43636722E9DD4E009A62EE /* CollectionViewController.swift */; };
+		8E45A81D22EC17FA0046F76E /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E45A81C22EC17FA0046F76E /* Montserrat-Bold.otf */; };
 		8E9C3E1722E71BA7003C53F8 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9C3E1522E7145B003C53F8 /* Montserrat-Medium.otf */; };
 		8E9C3E1922E72A90003C53F8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C3E1822E72A90003C53F8 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +39,11 @@
 		8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		8E43636122E9DA2F009A62EE /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		8E43636322E9DAD0009A62EE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8E43636422E9DAD0009A62EE /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		8E43636722E9DD4E009A62EE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		8E45A81C22EC17FA0046F76E /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		8E9C3E1522E7145B003C53F8 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		8E9C3E1822E72A90003C53F8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +81,7 @@
 				8E12E3D822E052B1009422A4 /* font */,
 				8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */,
 				8E12E32C22DF07C3009422A4 /* AppDelegate.swift */,
+				8E43636122E9DA2F009A62EE /* UPCarouselFlowLayout.swift */,
 				8E12E32E22DF07C3009422A4 /* art.scnassets */,
 				8E12E33022DF07C3009422A4 /* ViewController.swift */,
 				8E12E33222DF07C3009422A4 /* Main.storyboard */,
@@ -79,6 +90,9 @@
 				8E12E33A22DF07C6009422A4 /* Info.plist */,
 				8E12E34222DF21DE009422A4 /* LaunchScreenController.swift */,
 				8E9C3E1822E72A90003C53F8 /* RoundedButton.swift */,
+				8E43636322E9DAD0009A62EE /* CollectionViewCell.swift */,
+				8E43636422E9DAD0009A62EE /* CollectionViewCell.xib */,
+				8E43636722E9DD4E009A62EE /* CollectionViewController.swift */,
 			);
 			path = Civom;
 			sourceTree = "<group>";
@@ -89,6 +103,7 @@
 				8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */,
 				8E9C3E1522E7145B003C53F8 /* Montserrat-Medium.otf */,
 				8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */,
+				8E45A81C22EC17FA0046F76E /* Montserrat-Bold.otf */,
 			);
 			path = font;
 			sourceTree = "<group>";
@@ -156,9 +171,11 @@
 				8E12E42822E05FBB009422A4 /* Montserrat-Light.ttf in Resources */,
 				8E12E32F22DF07C3009422A4 /* art.scnassets in Resources */,
 				8E12E33922DF07C6009422A4 /* LaunchScreen.storyboard in Resources */,
+				8E45A81D22EC17FA0046F76E /* Montserrat-Bold.otf in Resources */,
 				8E12E37022DF2A27009422A4 /* SIL Open Font License.txt in Resources */,
 				8E12E33622DF07C6009422A4 /* Assets.xcassets in Resources */,
 				8E12E33422DF07C3009422A4 /* Main.storyboard in Resources */,
+				8E43636622E9DAD0009A62EE /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +188,11 @@
 			files = (
 				8E12E34322DF21DE009422A4 /* LaunchScreenController.swift in Sources */,
 				8E12E33122DF07C3009422A4 /* ViewController.swift in Sources */,
+				8E43636522E9DAD0009A62EE /* CollectionViewCell.swift in Sources */,
 				8E12E32D22DF07C3009422A4 /* AppDelegate.swift in Sources */,
+				8E43636822E9DD4E009A62EE /* CollectionViewController.swift in Sources */,
 				8E9C3E1922E72A90003C53F8 /* RoundedButton.swift in Sources */,
+				8E43636222E9DA2F009A62EE /* UPCarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
