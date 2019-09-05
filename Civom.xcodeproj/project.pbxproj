@@ -14,7 +14,6 @@
 		8E12E33622DF07C6009422A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E33522DF07C6009422A4 /* Assets.xcassets */; };
 		8E12E33922DF07C6009422A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E33722DF07C6009422A4 /* LaunchScreen.storyboard */; };
 		8E12E34322DF21DE009422A4 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12E34222DF21DE009422A4 /* LaunchScreenController.swift */; };
-		8E12E37022DF2A27009422A4 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */; };
 		8E12E42822E05FBB009422A4 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */; };
 		8E1AE0D922E5093500E745E0 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */; };
 		8E43636222E9DA2F009A62EE /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E43636122E9DA2F009A62EE /* UPCarouselFlowLayout.swift */; };
@@ -22,11 +21,21 @@
 		8E43636622E9DAD0009A62EE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E43636422E9DAD0009A62EE /* CollectionViewCell.xib */; };
 		8E43636822E9DD4E009A62EE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E43636722E9DD4E009A62EE /* CollectionViewController.swift */; };
 		8E45A81D22EC17FA0046F76E /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E45A81C22EC17FA0046F76E /* Montserrat-Bold.otf */; };
+		8E7D2B8422FB026000993269 /* categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D2B7F22FB026000993269 /* categories.storyboard */; };
+		8E7D2B8522FB026000993269 /* contactus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D2B8022FB026000993269 /* contactus.storyboard */; };
+		8E7D2B8622FB026000993269 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D2B8122FB026000993269 /* home.storyboard */; };
+		8E7D2B8722FB026000993269 /* productinfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D2B8222FB026000993269 /* productinfo.storyboard */; };
+		8E7D2B8822FB026000993269 /* products.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D2B8322FB026000993269 /* products.storyboard */; };
+		8E7D2B9022FB059F00993269 /* loginscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D2B8F22FB059F00993269 /* loginscreen.storyboard */; };
+		8E7D2B9422FC345400993269 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D2B9322FC345400993269 /* ContactVC.swift */; };
+		8E7D2B9622FC488000993269 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7D2B9522FC488000993269 /* test.storyboard */; };
 		8E9C3E1722E71BA7003C53F8 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E9C3E1522E7145B003C53F8 /* Montserrat-Medium.otf */; };
 		8E9C3E1922E72A90003C53F8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C3E1822E72A90003C53F8 /* RoundedButton.swift */; };
+		9CD55EAE0B14FF24C16B8CCA /* libPods-Civom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D096713722531411061C5A2 /* libPods-Civom.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D096713722531411061C5A2 /* libPods-Civom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Civom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E12E32922DF07C3009422A4 /* Civom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Civom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E12E32C22DF07C3009422A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E12E32E22DF07C3009422A4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -36,7 +45,6 @@
 		8E12E33822DF07C6009422A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E12E33A22DF07C6009422A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E12E34222DF21DE009422A4 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
-		8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		8E12E42722E05FBB009422A4 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		8E1AE0D822E4FEE300E745E0 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
 		8E43636122E9DA2F009A62EE /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
@@ -44,8 +52,18 @@
 		8E43636422E9DAD0009A62EE /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		8E43636722E9DD4E009A62EE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		8E45A81C22EC17FA0046F76E /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		8E7D2B7F22FB026000993269 /* categories.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = categories.storyboard; sourceTree = "<group>"; };
+		8E7D2B8022FB026000993269 /* contactus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = contactus.storyboard; sourceTree = "<group>"; };
+		8E7D2B8122FB026000993269 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		8E7D2B8222FB026000993269 /* productinfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = productinfo.storyboard; sourceTree = "<group>"; };
+		8E7D2B8322FB026000993269 /* products.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = products.storyboard; sourceTree = "<group>"; };
+		8E7D2B8F22FB059F00993269 /* loginscreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loginscreen.storyboard; sourceTree = "<group>"; };
+		8E7D2B9322FC345400993269 /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
+		8E7D2B9522FC488000993269 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		8E9C3E1522E7145B003C53F8 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		8E9C3E1822E72A90003C53F8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		BCB62487DC68E379A93DC59D /* Pods-Civom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Civom.release.xcconfig"; path = "Target Support Files/Pods-Civom/Pods-Civom.release.xcconfig"; sourceTree = "<group>"; };
+		CCCBC58E8F90BC1B7D49FC31 /* Pods-Civom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Civom.debug.xcconfig"; path = "Target Support Files/Pods-Civom/Pods-Civom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +71,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD55EAE0B14FF24C16B8CCA /* libPods-Civom.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78207A3A51D91B0031674AB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D096713722531411061C5A2 /* libPods-Civom.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E12E32022DF07C2009422A4 = {
 			isa = PBXGroup;
 			children = (
 				8E12E32B22DF07C3009422A4 /* Civom */,
 				8E12E32A22DF07C3009422A4 /* Products */,
+				A3FD141A7A06E1AC4FDA0F62 /* Pods */,
+				78207A3A51D91B0031674AB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +107,9 @@
 		8E12E32B22DF07C3009422A4 /* Civom */ = {
 			isa = PBXGroup;
 			children = (
+				8E7D2B7E22FB026000993269 /* Storyboards */,
+				8E7D2B9222FC341400993269 /* Controllers */,
 				8E12E3D822E052B1009422A4 /* font */,
-				8E12E34B22DF2A23009422A4 /* SIL Open Font License.txt */,
 				8E12E32C22DF07C3009422A4 /* AppDelegate.swift */,
 				8E43636122E9DA2F009A62EE /* UPCarouselFlowLayout.swift */,
 				8E12E32E22DF07C3009422A4 /* art.scnassets */,
@@ -108,6 +138,37 @@
 			path = font;
 			sourceTree = "<group>";
 		};
+		8E7D2B7E22FB026000993269 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E7D2B7F22FB026000993269 /* categories.storyboard */,
+				8E7D2B8F22FB059F00993269 /* loginscreen.storyboard */,
+				8E7D2B8022FB026000993269 /* contactus.storyboard */,
+				8E7D2B8122FB026000993269 /* home.storyboard */,
+				8E7D2B8222FB026000993269 /* productinfo.storyboard */,
+				8E7D2B8322FB026000993269 /* products.storyboard */,
+				8E7D2B9522FC488000993269 /* test.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8E7D2B9222FC341400993269 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E7D2B9322FC345400993269 /* ContactVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A3FD141A7A06E1AC4FDA0F62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBC58E8F90BC1B7D49FC31 /* Pods-Civom.debug.xcconfig */,
+				BCB62487DC68E379A93DC59D /* Pods-Civom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E12E33D22DF07C6009422A4 /* Build configuration list for PBXNativeTarget "Civom" */;
 			buildPhases = (
+				E9F2219A3AFCDA2E4EBD075E /* [CP] Check Pods Manifest.lock */,
 				8E12E32522DF07C3009422A4 /* Sources */,
 				8E12E32622DF07C3009422A4 /* Frameworks */,
 				8E12E32722DF07C3009422A4 /* Resources */,
@@ -167,19 +229,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1AE0D922E5093500E745E0 /* Montserrat-ExtraBold.otf in Resources */,
+				8E7D2B8422FB026000993269 /* categories.storyboard in Resources */,
 				8E9C3E1722E71BA7003C53F8 /* Montserrat-Medium.otf in Resources */,
 				8E12E42822E05FBB009422A4 /* Montserrat-Light.ttf in Resources */,
+				8E7D2B8722FB026000993269 /* productinfo.storyboard in Resources */,
+				8E7D2B8622FB026000993269 /* home.storyboard in Resources */,
+				8E7D2B9622FC488000993269 /* test.storyboard in Resources */,
+				8E7D2B9022FB059F00993269 /* loginscreen.storyboard in Resources */,
 				8E12E32F22DF07C3009422A4 /* art.scnassets in Resources */,
 				8E12E33922DF07C6009422A4 /* LaunchScreen.storyboard in Resources */,
 				8E45A81D22EC17FA0046F76E /* Montserrat-Bold.otf in Resources */,
-				8E12E37022DF2A27009422A4 /* SIL Open Font License.txt in Resources */,
 				8E12E33622DF07C6009422A4 /* Assets.xcassets in Resources */,
 				8E12E33422DF07C3009422A4 /* Main.storyboard in Resources */,
 				8E43636622E9DAD0009A62EE /* CollectionViewCell.xib in Resources */,
+				8E7D2B8522FB026000993269 /* contactus.storyboard in Resources */,
+				8E7D2B8822FB026000993269 /* products.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9F2219A3AFCDA2E4EBD075E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Civom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E12E32522DF07C3009422A4 /* Sources */ = {
@@ -193,6 +286,7 @@
 				8E43636822E9DD4E009A62EE /* CollectionViewController.swift in Sources */,
 				8E9C3E1922E72A90003C53F8 /* RoundedButton.swift in Sources */,
 				8E43636222E9DA2F009A62EE /* UPCarouselFlowLayout.swift in Sources */,
+				8E7D2B9422FC345400993269 /* ContactVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,17 +430,18 @@
 		};
 		8E12E33E22DF07C6009422A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCCBC58E8F90BC1B7D49FC31 /* Pods-Civom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58C5ZB5P4Q;
+				DEVELOPMENT_TEAM = 6WVYJT4H83;
 				INFOPLIST_FILE = Civom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lateralx.civom.Civom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lateralx.civom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,17 +450,18 @@
 		};
 		8E12E33F22DF07C6009422A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB62487DC68E379A93DC59D /* Pods-Civom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58C5ZB5P4Q;
+				DEVELOPMENT_TEAM = 6WVYJT4H83;
 				INFOPLIST_FILE = Civom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lateralx.civom.Civom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lateralx.civom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

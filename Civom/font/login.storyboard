@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Civom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="civom_logo_lowres" translatesAutoresizingMaskIntoConstraints="NO" id="60w-Oa-8RY">
+                                <rect key="frame" x="132" y="151" width="150" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="C1Q-h3-Z29"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpX-rf-iXL">
+                                <rect key="frame" x="75" y="316" width="260" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="JSs-qo-2Pr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.28235294117647058" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+ 91 " adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DpZ-uu-ntp">
+                                <rect key="frame" x="65" y="362" width="284" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bsQ-Pr-8rW"/>
+                                </constraints>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" returnKeyType="done" textContentType="tel"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Textbox border" translatesAutoresizingMaskIntoConstraints="NO" id="Zgx-rq-Fbk">
+                                <rect key="frame" x="52" y="350" width="310" height="57"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Or" translatesAutoresizingMaskIntoConstraints="NO" id="rr6-A1-TLh">
+                                <rect key="frame" x="57" y="408" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tiz-hy-DEN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google Sign in" translatesAutoresizingMaskIntoConstraints="NO" id="6P0-ZY-UTt">
+                                <rect key="frame" x="75" y="466" width="260" height="60"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-yG-DTr">
+                                <rect key="frame" x="75" y="473" width="264" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="gcJ-lG-U4z"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By LateralX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B44-EN-1FW">
+                                <rect key="frame" x="52" y="831" width="310" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cpX-rf-iXL" firstAttribute="leading" secondItem="ccg-yG-DTr" secondAttribute="leading" id="5nc-4Y-PtV"/>
+                            <constraint firstItem="Zgx-rq-Fbk" firstAttribute="top" secondItem="cpX-rf-iXL" secondAttribute="bottom" constant="14" id="6sC-Xa-R3z"/>
+                            <constraint firstItem="DpZ-uu-ntp" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="65" id="7H5-b2-DMk"/>
+                            <constraint firstItem="DpZ-uu-ntp" firstAttribute="centerX" secondItem="rr6-A1-TLh" secondAttribute="centerX" id="BqG-QI-vZi"/>
+                            <constraint firstItem="cpX-rf-iXL" firstAttribute="trailing" secondItem="6P0-ZY-UTt" secondAttribute="trailing" id="CfG-Ao-8Kt"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="cpX-rf-iXL" secondAttribute="trailing" constant="79" id="Cnu-jC-TdS"/>
+                            <constraint firstItem="60w-Oa-8RY" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="DWm-b6-hNL"/>
+                            <constraint firstItem="ccg-yG-DTr" firstAttribute="centerX" secondItem="B44-EN-1FW" secondAttribute="centerX" id="Tt0-LB-zFB"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="B44-EN-1FW" secondAttribute="bottom" constant="10" id="UNg-tX-zqb"/>
+                            <constraint firstItem="6P0-ZY-UTt" firstAttribute="top" secondItem="rr6-A1-TLh" secondAttribute="bottom" constant="8" symbolic="YES" id="WCm-gJ-qgq"/>
+                            <constraint firstItem="rr6-A1-TLh" firstAttribute="top" secondItem="DpZ-uu-ntp" secondAttribute="bottom" constant="16" id="WWZ-9L-Vgu"/>
+                            <constraint firstItem="rr6-A1-TLh" firstAttribute="top" secondItem="Zgx-rq-Fbk" secondAttribute="bottom" constant="1" id="ZuW-fg-LT1"/>
+                            <constraint firstItem="6P0-ZY-UTt" firstAttribute="leading" secondItem="ccg-yG-DTr" secondAttribute="leading" id="aLw-Vr-Oeg"/>
+                            <constraint firstItem="Zgx-rq-Fbk" firstAttribute="centerX" secondItem="DpZ-uu-ntp" secondAttribute="centerX" id="aaL-b9-aAu"/>
+                            <constraint firstItem="ccg-yG-DTr" firstAttribute="top" secondItem="rr6-A1-TLh" secondAttribute="bottom" constant="15" id="cZE-OA-tv8"/>
+                            <constraint firstItem="DpZ-uu-ntp" firstAttribute="top" secondItem="cpX-rf-iXL" secondAttribute="bottom" constant="26" id="dNH-nI-nBm"/>
+                            <constraint firstItem="60w-Oa-8RY" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="107" id="ec3-n4-Yfm"/>
+                            <constraint firstItem="cpX-rf-iXL" firstAttribute="top" secondItem="60w-Oa-8RY" secondAttribute="bottom" constant="50" id="h3O-0O-c8Y"/>
+                            <constraint firstItem="6P0-ZY-UTt" firstAttribute="bottom" secondItem="ccg-yG-DTr" secondAttribute="bottom" id="kcz-mn-95V"/>
+                            <constraint firstItem="60w-Oa-8RY" firstAttribute="centerX" secondItem="DpZ-uu-ntp" secondAttribute="centerX" id="l4i-eI-Kq3"/>
+                            <constraint firstItem="cpX-rf-iXL" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="75" id="naS-xP-Vz9"/>
+                            <constraint firstItem="Zgx-rq-Fbk" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="52" id="oDO-nH-4rf"/>
+                            <constraint firstItem="rr6-A1-TLh" firstAttribute="centerX" secondItem="ccg-yG-DTr" secondAttribute="centerX" id="pII-MC-Kn0"/>
+                            <constraint firstItem="rr6-A1-TLh" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="57" id="t4R-wP-5rw"/>
+                            <constraint firstItem="B44-EN-1FW" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="52" id="wdW-UO-QPR"/>
+                            <constraint firstItem="60w-Oa-8RY" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="132" id="zfR-gy-HhS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="v8V-g7-UyH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Google Sign in" width="747" height="138"/>
+        <image name="Or" width="267" height="16"/>
+        <image name="Textbox border" width="747" height="137"/>
+        <image name="civom_logo_lowres" width="97" height="92"/>
+    </resources>
+</document>

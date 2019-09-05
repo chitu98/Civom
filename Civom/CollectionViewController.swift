@@ -7,23 +7,59 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
+
+//defining
 struct ModelCollectionFlowLayout {
     var title:String = ""
     var image:UIImage!
     var desc:String = ""
 }
-class CollectionViewController: UIViewController {
-   
-    
-    var arrData = [ModelCollectionFlowLayout]()
 
+class CollectionViewController: UIViewController {
+   //array for static data
+    var arrData = [ModelCollectionFlowLayout]()
+    
+   //array for api
+     var arrRes = [[String:AnyObject]]() //array of dictionary
+
+    @IBOutlet weak var bgGrsadientView: UIView!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectData()
+        //gradient bg
+        
+        let layer = CAGradientLayer()
+        layer.frame = view.bounds
+        layer.colors = [UIColor.white.cgColor,
+                        UIColor(red:0.96, green:0.96, blue:0.96, alpha:1.0).cgColor]
+        layer.startPoint = CGPoint(x: 1,y: 0)
+        layer.endPoint = CGPoint(x: 1,y: 0.6)
+       // layer.locations = [0, 0.5]
+    //    bgGradientView.layer.addSublayer(layer)
+        
+      //  collectData()
+        
+        //start for api request
+        
+        Alamofire.request("https://api.imgur.com/3/gallery/hot/viral/0.json").responseJSON { (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                
+                if let resData = swiftyJsonVar["data"].arrayObject {
+                    self.arrRes = resData as! [[String:AnyObject]]
+                }
+                if self.arrRes.count > 0 {
+                    self.collectionView.reloadData()
+                }
+            }
+        }
+        //end for api request
         
         self.collectionView.showsHorizontalScrollIndicator = false
         
@@ -38,7 +74,7 @@ class CollectionViewController: UIViewController {
         floawLayout.spacingMode = .fixed(spacing: 5.0)
         collectionView.collectionViewLayout = floawLayout
     }
-
+/* start of collectData array
     func collectData(){
         arrData = [
             ModelCollectionFlowLayout(title: "Story Chair", image: #imageLiteral(resourceName: "story chair"), desc:"The perfect story chair in your children's area."),
@@ -50,6 +86,10 @@ class CollectionViewController: UIViewController {
             ModelCollectionFlowLayout(title: "Image 7", image: #imageLiteral(resourceName: "f2"), desc:"The perfect story chair in your children's area."),
         ]
     }
+    end of collectData arr */
+    
+    
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let layout = self.collectionView.collectionViewLayout as! UPCarouselFlowLayout
         let pageSide = (layout.scrollDirection == .horizontal) ? self.pageSize.width : self.pageSize.height
@@ -78,21 +118,24 @@ class CollectionViewController: UIViewController {
 extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrData.count
+        return arrRes.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
+        //data call from api into labels
+        var dict = arrRes[indexPath.row]
+        cell.labelTitle?.text = dict["id"] as? String
+        cell.labelDesc?.text = dict["title"] as? String
+        
+        
+      /* static data call
         cell.imgView.image = arrData[indexPath.row].image
         cell.labelTitle.text = arrData[indexPath.row].title
         cell.labelDesc.text = arrData[indexPath.row].desc
+    */
         return cell
     }
     
-    
-    
-    
-    
+
 }
-
-

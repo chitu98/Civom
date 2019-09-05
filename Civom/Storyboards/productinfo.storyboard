@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="94E-IQ-mhL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="10A-Pg-Am6">
+            <objects>
+                <viewController id="94E-IQ-mhL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yBO-TU-mC9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mh-yv-YhX">
+                                <rect key="frame" x="0.0" y="589" width="414" height="758"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGB-8j-Oq6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="680"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPu-LB-ksc" userLabel="labelTitle">
+                                                <rect key="frame" x="57" y="40" width="315" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Vep-6D-4hF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg2-c8-4Vz" userLabel="labelDesc">
+                                                <rect key="frame" x="57" y="106" width="315" height="241"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="241" id="zNO-rp-LsG"/>
+                                                </constraints>
+                                                <string key="text">The perfect story time chair in your children’s area.
+
+Description
+1. The perfect story time chair in your children’s area. Mode with fabric, which is easy to clean.
+2. Swivels for flexible movement and has comfortable armrests to reduce fatigue.
+
+Story Chair
+770 W x 700 D x 1080 H mm
+Seat height 450mm</string>
+                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZPu-LB-ksc" firstAttribute="top" secondItem="FGB-8j-Oq6" secondAttribute="top" constant="40" id="59f-sp-DCs"/>
+                                            <constraint firstItem="Hg2-c8-4Vz" firstAttribute="trailing" secondItem="ZPu-LB-ksc" secondAttribute="trailing" id="C4s-wS-sZ9"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZPu-LB-ksc" secondAttribute="trailing" constant="42" id="Wmn-tc-D9w"/>
+                                            <constraint firstItem="ZPu-LB-ksc" firstAttribute="leading" secondItem="FGB-8j-Oq6" secondAttribute="leading" constant="57" id="aa9-lU-uOo"/>
+                                            <constraint firstItem="Hg2-c8-4Vz" firstAttribute="leading" secondItem="ZPu-LB-ksc" secondAttribute="leading" id="jTB-WL-niR"/>
+                                            <constraint firstItem="Hg2-c8-4Vz" firstAttribute="top" secondItem="ZPu-LB-ksc" secondAttribute="bottom" constant="16" id="kc6-gU-PHs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-my-gnt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="547"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="547" id="4fa-1z-yuM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_storychair" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-Rm-beU">
+                                <rect key="frame" x="87" y="283" width="240" height="308"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PKc-Rm-beU" firstAttribute="top" secondItem="9OC-cc-xV6" secondAttribute="top" constant="239" id="DGK-rF-5IY"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="top" secondItem="9OC-cc-xV6" secondAttribute="top" constant="545" id="Gv4-sP-Cne"/>
+                            <constraint firstItem="PKc-Rm-beU" firstAttribute="centerX" secondItem="VCr-my-gnt" secondAttribute="centerX" id="K0v-zg-car"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="trailing" secondItem="VCr-my-gnt" secondAttribute="trailing" id="Zp3-S2-NaA"/>
+                            <constraint firstAttribute="trailing" secondItem="VCr-my-gnt" secondAttribute="trailing" id="eI4-Zd-MLc"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="leading" secondItem="VCr-my-gnt" secondAttribute="leading" id="mI3-YR-BiP"/>
+                            <constraint firstItem="VCr-my-gnt" firstAttribute="leading" secondItem="yBO-TU-mC9" secondAttribute="leading" id="nbl-MI-Ku2"/>
+                            <constraint firstItem="PKc-Rm-beU" firstAttribute="leading" secondItem="9OC-cc-xV6" secondAttribute="leading" constant="87" id="qZq-Xi-Pgk"/>
+                            <constraint firstItem="6mh-yv-YhX" firstAttribute="top" secondItem="PKc-Rm-beU" secondAttribute="bottom" constant="-2" id="uhO-8R-LlL"/>
+                            <constraint firstAttribute="bottom" secondItem="6mh-yv-YhX" secondAttribute="bottom" constant="-451" id="x7d-F0-mPm"/>
+                            <constraint firstItem="VCr-my-gnt" firstAttribute="top" secondItem="9OC-cc-xV6" secondAttribute="top" id="zU2-yp-yMO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9OC-cc-xV6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpP-jz-MPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3123" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="product_background" width="1080" height="1656.5"/>
+        <image name="product_storychair" width="783" height="1075"/>
+    </resources>
+</document>

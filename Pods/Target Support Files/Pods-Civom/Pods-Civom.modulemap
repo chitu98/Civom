@@ -1,0 +1,6 @@
+module Pods_Civom {
+  umbrella header "Pods-Civom-umbrella.h"
+
+  export *
+  module * { export * }
+}
