@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fVL-1D-079">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
@@ -21,29 +21,27 @@
             <objects>
                 <viewController id="fVL-1D-079" customClass="CollectionViewController" customModule="Civom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rj8-MJ-FwU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P88-Jf-uou">
-                                <rect key="frame" x="0.0" y="0.0" width="38" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="77" height="818"/>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Br-JF-jwT">
-                                <rect key="frame" x="76" y="307" width="338" height="589"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Br-JF-jwT">
+                                <rect key="frame" x="115" y="351" width="334" height="774"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soft Seating " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwB-np-Q95">
-                                <rect key="frame" x="36" y="53" width="296" height="49"/>
+                                <rect key="frame" x="36" y="97" width="335" height="49"/>
                                 <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="40"/>
                                 <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP2-9O-9hd" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
-                                <rect key="frame" x="47" y="110" width="153" height="41"/>
+                                <rect key="frame" x="86" y="154" width="153" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="Vaa-KX-7tx"/>
-                                    <constraint firstAttribute="height" constant="37" id="xCK-Je-gvL"/>
+                                    <constraint firstAttribute="width" constant="153" id="JNN-oj-nds"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Cave Seating">
@@ -69,10 +67,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S72-3K-qSg" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
-                                <rect key="frame" x="47" y="160" width="226" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="DCq-uq-nI8"/>
-                                </constraints>
+                                <rect key="frame" x="86" y="204" width="226" height="41"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Cushions &amp; Bean Bags">
                                     <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,9 +92,9 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-bf-Fp1" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
-                                <rect key="frame" x="208" y="110" width="155" height="41"/>
+                                <rect key="frame" x="247" y="154" width="155" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="fV3-0C-A5u"/>
+                                    <constraint firstAttribute="width" constant="155" id="bUt-sg-OmV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Sofa Seating">
@@ -125,9 +120,9 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRu-Jh-amF" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
-                                <rect key="frame" x="219" y="209" width="141" height="41"/>
+                                <rect key="frame" x="258" y="253" width="141" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="caZ-fT-AeH"/>
+                                    <constraint firstAttribute="width" constant="141" id="3t2-6v-Cs5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Ottomans">
@@ -153,7 +148,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G0W-mn-WWN">
-                                <rect key="frame" x="0.0" y="278" width="375" height="315"/>
+                                <rect key="frame" x="0.0" y="322" width="414" height="466"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="klH-zN-NGA">
                                     <size key="itemSize" width="50" height="50"/>
@@ -172,15 +167,11 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="fVL-1D-079" id="HNU-lX-NYv"/>
                                     <outlet property="delegate" destination="fVL-1D-079" id="1EG-yU-PaM"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7g-Ba-cB9" customClass="RoundedBorderButton" customModule="Civom" customModuleProvider="target">
-                                <rect key="frame" x="47" y="209" width="167" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="iSf-UJ-cwS"/>
-                                </constraints>
+                                <rect key="frame" x="86" y="253" width="167" height="41"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Lounge Chairs">
                                     <color key="titleColor" red="0.96862745100000003" green="0.7725490196" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -213,40 +204,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G0W-mn-WWN" firstAttribute="bottom" secondItem="nFq-lb-42v" secondAttribute="bottom" constant="-74" id="0B7-13-kJP"/>
-                            <constraint firstItem="G0W-mn-WWN" firstAttribute="leading" secondItem="nFq-lb-42v" secondAttribute="leading" id="1EP-l3-F9q"/>
-                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="top" secondItem="dRu-Jh-amF" secondAttribute="top" id="1oB-zL-90c"/>
-                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="top" secondItem="S72-3K-qSg" secondAttribute="bottom" constant="8" symbolic="YES" id="340-32-WBB"/>
-                            <constraint firstItem="xP2-9O-9hd" firstAttribute="baseline" secondItem="U8G-bf-Fp1" secondAttribute="firstBaseline" id="5BH-e5-iDC"/>
-                            <constraint firstItem="P88-Jf-uou" firstAttribute="top" secondItem="nFq-lb-42v" secondAttribute="top" id="5df-dP-t1n"/>
-                            <constraint firstItem="S72-3K-qSg" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="9" id="8vc-ZY-VOI"/>
-                            <constraint firstItem="xP2-9O-9hd" firstAttribute="top" secondItem="uwB-np-Q95" secondAttribute="bottom" constant="8" symbolic="YES" id="BBe-9k-tck"/>
-                            <constraint firstItem="P88-Jf-uou" firstAttribute="leading" secondItem="rj8-MJ-FwU" secondAttribute="leading" id="C33-9I-vvS"/>
-                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="dRu-Jh-amF" secondAttribute="trailing" constant="15" id="CFr-74-uJz"/>
-                            <constraint firstItem="dRu-Jh-amF" firstAttribute="leading" secondItem="e7g-Ba-cB9" secondAttribute="trailing" constant="5" id="Cye-VW-8Lv"/>
-                            <constraint firstAttribute="trailing" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="337" id="DRZ-kA-89n"/>
-                            <constraint firstItem="U8G-bf-Fp1" firstAttribute="baseline" secondItem="xP2-9O-9hd" secondAttribute="firstBaseline" id="FtR-i5-CPk"/>
-                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="baseline" secondItem="dRu-Jh-amF" secondAttribute="firstBaseline" id="GTX-P9-kwA"/>
-                            <constraint firstAttribute="bottom" secondItem="P88-Jf-uou" secondAttribute="bottom" id="H7F-af-2VQ"/>
-                            <constraint firstItem="uwB-np-Q95" firstAttribute="leading" secondItem="nFq-lb-42v" secondAttribute="leading" constant="36" id="Ix8-be-P4W"/>
-                            <constraint firstItem="G0W-mn-WWN" firstAttribute="top" secondItem="e7g-Ba-cB9" secondAttribute="bottom" constant="28" id="Kra-ND-OrW"/>
-                            <constraint firstItem="U8G-bf-Fp1" firstAttribute="leading" secondItem="xP2-9O-9hd" secondAttribute="trailing" constant="8" symbolic="YES" id="PH0-sK-V2u"/>
-                            <constraint firstItem="xP2-9O-9hd" firstAttribute="top" secondItem="U8G-bf-Fp1" secondAttribute="top" id="QyI-IA-fmu"/>
-                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="S72-3K-qSg" secondAttribute="trailing" constant="102" id="T5q-qj-9GD"/>
-                            <constraint firstItem="dRu-Jh-amF" firstAttribute="baseline" secondItem="e7g-Ba-cB9" secondAttribute="firstBaseline" id="UJP-G4-JfM"/>
-                            <constraint firstItem="xP2-9O-9hd" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="9" id="bIN-RX-QD5"/>
-                            <constraint firstItem="G0W-mn-WWN" firstAttribute="trailing" secondItem="nFq-lb-42v" secondAttribute="trailing" id="gdQ-ff-ZfQ"/>
-                            <constraint firstItem="nFq-lb-42v" firstAttribute="bottom" secondItem="e7g-Ba-cB9" secondAttribute="bottom" constant="583" id="izN-gA-Hp0"/>
-                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="9" id="nqg-f6-RDI"/>
-                            <constraint firstItem="uwB-np-Q95" firstAttribute="top" secondItem="nFq-lb-42v" secondAttribute="top" constant="53" id="oNh-pY-oPS"/>
-                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="uwB-np-Q95" secondAttribute="trailing" constant="43" id="wcg-OA-ESK"/>
-                            <constraint firstItem="S72-3K-qSg" firstAttribute="top" secondItem="xP2-9O-9hd" secondAttribute="bottom" constant="9" id="zNm-g1-C1x"/>
+                            <constraint firstItem="uwB-np-Q95" firstAttribute="leading" secondItem="nFq-lb-42v" secondAttribute="leading" constant="36" id="0qW-va-N1K"/>
+                            <constraint firstItem="U8G-bf-Fp1" firstAttribute="leading" secondItem="xP2-9O-9hd" secondAttribute="trailing" constant="8" symbolic="YES" id="2nH-2C-WcZ"/>
+                            <constraint firstItem="dRu-Jh-amF" firstAttribute="leading" secondItem="e7g-Ba-cB9" secondAttribute="trailing" constant="5" id="6MT-qd-V15"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Br-JF-jwT" secondAttribute="trailing" constant="-55" id="6gX-R2-851"/>
+                            <constraint firstAttribute="bottom" secondItem="3Br-JF-jwT" secondAttribute="bottom" constant="-229" id="783-CR-4eO"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="U8G-bf-Fp1" secondAttribute="trailing" constant="12" id="DeI-XD-bj3"/>
+                            <constraint firstItem="P88-Jf-uou" firstAttribute="bottom" secondItem="nFq-lb-42v" secondAttribute="bottom" id="IoW-bZ-XBC"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="dRu-Jh-amF" secondAttribute="trailing" constant="15" id="J1Z-S8-WM3"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="top" secondItem="uwB-np-Q95" secondAttribute="bottom" constant="8" symbolic="YES" id="Jho-T6-vX7"/>
+                            <constraint firstItem="S72-3K-qSg" firstAttribute="top" secondItem="xP2-9O-9hd" secondAttribute="bottom" constant="9" id="MFW-Wd-gdd"/>
+                            <constraint firstItem="P88-Jf-uou" firstAttribute="leading" secondItem="G0W-mn-WWN" secondAttribute="leading" id="TPn-b5-pVW"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="leading" secondItem="S72-3K-qSg" secondAttribute="leading" id="TjL-lf-tGo"/>
+                            <constraint firstItem="3Br-JF-jwT" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="38" id="UHs-o7-C8B"/>
+                            <constraint firstItem="uwB-np-Q95" firstAttribute="top" secondItem="nFq-lb-42v" secondAttribute="top" constant="53" id="WiC-DG-b8b"/>
+                            <constraint firstItem="P88-Jf-uou" firstAttribute="leading" secondItem="rj8-MJ-FwU" secondAttribute="leading" id="XHh-WV-CX6"/>
+                            <constraint firstItem="3Br-JF-jwT" firstAttribute="top" secondItem="dRu-Jh-amF" secondAttribute="bottom" constant="57" id="XnU-gC-SQt"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="bottom" secondItem="G0W-mn-WWN" secondAttribute="bottom" constant="74" id="Xna-n0-8Y2"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="leading" secondItem="P88-Jf-uou" secondAttribute="trailing" constant="9" id="cqM-34-GxV"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="S72-3K-qSg" secondAttribute="trailing" constant="102" id="d6A-Mu-7UB"/>
+                            <constraint firstItem="G0W-mn-WWN" firstAttribute="top" secondItem="e7g-Ba-cB9" secondAttribute="bottom" constant="28" id="do4-rf-tHU"/>
+                            <constraint firstItem="P88-Jf-uou" firstAttribute="top" secondItem="nFq-lb-42v" secondAttribute="top" id="dwo-9Y-BNj"/>
+                            <constraint firstAttribute="trailing" secondItem="G0W-mn-WWN" secondAttribute="trailing" id="e9A-Wt-UMp"/>
+                            <constraint firstItem="xP2-9O-9hd" firstAttribute="baseline" secondItem="U8G-bf-Fp1" secondAttribute="baseline" id="h6Z-Tb-V7d"/>
+                            <constraint firstItem="S72-3K-qSg" firstAttribute="leading" secondItem="e7g-Ba-cB9" secondAttribute="leading" id="iUT-6Z-XQv"/>
+                            <constraint firstItem="nFq-lb-42v" firstAttribute="trailing" secondItem="uwB-np-Q95" secondAttribute="trailing" constant="43" id="nQm-Co-j3I"/>
+                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="baseline" secondItem="dRu-Jh-amF" secondAttribute="baseline" id="tXp-1b-xBN"/>
+                            <constraint firstItem="e7g-Ba-cB9" firstAttribute="top" secondItem="S72-3K-qSg" secondAttribute="bottom" constant="8" symbolic="YES" id="wtc-wq-OUw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nFq-lb-42v"/>
                     </view>
-                    <connections>
-                        <outlet property="bgGradientView" destination="3Br-JF-jwT" id="kUz-b3-x1g"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gd-Ql-yB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

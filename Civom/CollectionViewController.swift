@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Kingfisher
 
 
 //defining
@@ -47,11 +48,11 @@ class CollectionViewController: UIViewController {
         
         //start for api request
         
-        Alamofire.request("https://api.imgur.com/3/gallery/hot/viral/0.json").responseJSON { (responseData) -> Void in
+        Alamofire.request("http://35.154.220.170/api/assets").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 
-                if let resData = swiftyJsonVar["data"].arrayObject {
+                if let resData = swiftyJsonVar.arrayObject {
                     self.arrRes = resData as! [[String:AnyObject]]
                 }
                 if self.arrRes.count > 0 {
@@ -125,10 +126,29 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         //data call from api into labels
         var dict = arrRes[indexPath.row]
-        cell.labelTitle?.text = dict["id"] as? String
-        cell.labelDesc?.text = dict["title"] as? String
         
+        func nullToNil(value : AnyObject?) -> AnyObject? {
+                   if value is NSNull {
+                    return "null val" as AnyObject
+                   } else {
+                       return value
+                   }
+               }
         
+        let domain = "http://35.154.220.170/"
+        let lol = nullToNil(value: dict["thumbnail_compressed"])
+        let new = lol as! String
+        let newString = new.replacingOccurrences(of: "\\", with: "/")
+        let url = "\(domain)\(newString)"
+
+        
+        cell.labelTitle?.text = dict["name"] as? String
+        cell.labelDesc?.text = dict["description"] as? String
+
+       
+        let linkURL = URL(string: url)
+        cell.imgView.kf.setImage(with: linkURL)
+            
       /* static data call
         cell.imgView.image = arrData[indexPath.row].image
         cell.labelTitle.text = arrData[indexPath.row].title

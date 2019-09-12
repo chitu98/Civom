@@ -50,9 +50,9 @@ class ContactVC: UIViewController, MFMailComposeViewControllerDelegate {
     func sendMailfunc(){
         let mailCompose = MFMailComposeViewController()
         mailCompose.mailComposeDelegate = self
-        mailCompose.setToRecipients(["hello@lateral.com"])
+        mailCompose.setToRecipients(["support@civom.co.in"])
         mailCompose.setSubject("Hello")
-        mailCompose.setMessageBody("This is a test email", isHTML: false)
+        mailCompose.setMessageBody("This is a test email from Civom iOS App :D", isHTML: false)
         
         if MFMailComposeViewController.canSendMail(){
             self.present(mailCompose, animated: true, completion: nil)
