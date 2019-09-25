@@ -143,12 +143,12 @@ class FinalViewController: UIViewController, ARSCNViewDelegate {
     // MARK: - CollectionView3
     
     // start of collectData array
-      func collectData(){
-          arrData = [ ObjectCollectionFlowLayout(title: "Check 1",image: #imageLiteral(resourceName: "4")),
-                      ObjectCollectionFlowLayout(title: "Check 2",image: #imageLiteral(resourceName: "3")),
-                      ObjectCollectionFlowLayout(title: "Check 3",image: #imageLiteral(resourceName: "2")),
-                      ObjectCollectionFlowLayout(title: "Check 4",image: #imageLiteral(resourceName: "1")),        ]
-      }
+//      func collectData(){
+//          arrData = [ ObjectCollectionFlowLayout(title: "Check 1",image: #imageLiteral(resourceName: "4")),
+//                      ObjectCollectionFlowLayout(title: "Check 2",image: #imageLiteral(resourceName: "3")),
+//                      ObjectCollectionFlowLayout(title: "Check 3",image: #imageLiteral(resourceName: "2")),
+//                      ObjectCollectionFlowLayout(title: "Check 4",image: #imageLiteral(resourceName: "1")),        ]
+//      }
     //  end of collectData arr */
       
        func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -243,11 +243,11 @@ class FinalViewController: UIViewController, ARSCNViewDelegate {
         case chairNode:
             addObject(position: hitTransform, sceneView: sceneView2, node: chairNode, objectPath: "art.scnassets/Cresent/Cresent.scn")
         case lampNode:
-            addObject(position: hitTransform, sceneView: sceneView2, node: lampNode, objectPath: "art.scnassets/Cube/Cube.scn")
+            addObject(position: hitTransform, sceneView: sceneView2, node: lampNode, objectPath: "art.scnassets/Cube/Cube_old.scn")
         case dogNode:
             addObject(position: hitTransform, sceneView: sceneView2, node: dogNode, objectPath: "art.scnassets/dog/dog.scn")
         case rectNode:
-        addObject(position: hitTransform, sceneView: sceneView2, node: dogNode, objectPath: "art.scnassets/HexagonOttoman/HexagonOttoman.scn")
+        addObject(position: hitTransform, sceneView: sceneView2, node: dogNode, objectPath: "art.scnassets/Rectangle/rectangle_new.dae")
         default:
             print("No Node Found")
         }

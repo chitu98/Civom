@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mtl-dh-W6q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="8KI-Lw-0tC">
+            <objects>
+                <viewController id="jw2-6z-qXc" customClass="AboutViewController" customModule="Civom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KfH-Kf-X81">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AGN-dl-PaS">
+                                <rect key="frame" x="20" y="178" width="374" height="1000"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="About US" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs9-Ri-Xyj" userLabel="About Us">
+                                        <rect key="frame" x="0.0" y="8" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpP-pU-IDi" userLabel="About us Desc">
+                                        <rect key="frame" x="0.0" y="55" width="374" height="342"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="342" id="oYw-8q-3Lb"/>
+                                        </constraints>
+                                        <string key="text">At CIVOM, we always thrive on challenging the conventional learning spaces. We, with our Australian counterpart RAECO- are capable of consulting and delivering the learning spaces ready for the new age, across the globe. RACEO is a globally recognised brand from Melbourne- Australia, for over 50 years has been in the business of revolutionising and providing unique spaces for the needs of libraries and education spaces in Australia and other neighbouring countries. CIVOM based in Indore believes that the shift in learning spaces is the necessity of 21st-century education. Our mantra is to work as a team with our partners to discover, design, deploy and reflect the philosophy of yours through dynamic products and services for the education domain. </string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Vision" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnv-il-spe">
+                                        <rect key="frame" x="-8" y="392" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="We believe that innovatively created learning spaces that are responsive to the environment will inspire tomorrow's leaders." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPM-Iw-eN8" userLabel="Vision Desc">
+                                        <rect key="frame" x="0.0" y="421" width="374" height="78"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-OE-Rj9">
+                                        <rect key="frame" x="0.0" y="507" width="374" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twN-K4-fkg" userLabel="Mission Desc">
+                                        <rect key="frame" x="0.0" y="544" width="374" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text"> A progressive organization that creates bespoke experiences by designing, developing &amp; deploying adaptive learning environments for innovative organizations by ensuring the right solutions &amp; nurturing relationships.
+</string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CpP-pU-IDi" secondAttribute="trailing" id="8aE-k7-K7y"/>
+                                    <constraint firstAttribute="trailing" secondItem="gs9-Ri-Xyj" secondAttribute="trailing" id="AYF-5P-9e0"/>
+                                    <constraint firstItem="gs9-Ri-Xyj" firstAttribute="width" secondItem="AGN-dl-PaS" secondAttribute="width" id="KyR-pe-WIH"/>
+                                    <constraint firstAttribute="trailing" secondItem="FPM-Iw-eN8" secondAttribute="trailing" id="UFA-zt-ZHZ"/>
+                                    <constraint firstItem="FPM-Iw-eN8" firstAttribute="leading" secondItem="AGN-dl-PaS" secondAttribute="leading" id="ZhP-vI-Rdx"/>
+                                    <constraint firstItem="gs9-Ri-Xyj" firstAttribute="leading" secondItem="AGN-dl-PaS" secondAttribute="leading" id="bZh-eh-Kk4"/>
+                                    <constraint firstItem="FPM-Iw-eN8" firstAttribute="width" secondItem="AGN-dl-PaS" secondAttribute="width" id="e7K-8m-kif"/>
+                                    <constraint firstItem="gs9-Ri-Xyj" firstAttribute="height" secondItem="AGN-dl-PaS" secondAttribute="height" id="jBo-Qk-h6y"/>
+                                    <constraint firstItem="FPM-Iw-eN8" firstAttribute="width" secondItem="AGN-dl-PaS" secondAttribute="width" id="kKF-kH-nfE"/>
+                                    <constraint firstAttribute="trailing" secondItem="lnv-il-spe" secondAttribute="trailing" id="q5K-ga-H86"/>
+                                    <constraint firstItem="CpP-pU-IDi" firstAttribute="width" secondItem="gs9-Ri-Xyj" secondAttribute="width" id="v0h-BO-moR"/>
+                                    <constraint firstItem="CpP-pU-IDi" firstAttribute="leading" secondItem="AGN-dl-PaS" secondAttribute="leading" id="vPl-5r-b8m"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="z2f-jN-80W"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="h0C-j9-3tB"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="civom_logo" translatesAutoresizingMaskIntoConstraints="NO" id="9DZ-qJ-yN1">
+                                <rect key="frame" x="-1491" y="88" width="3396" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Jim-Gq-iyS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9DZ-qJ-yN1" firstAttribute="top" secondItem="RzA-kh-zdu" secondAttribute="top" id="10k-uH-hf8"/>
+                            <constraint firstItem="AGN-dl-PaS" firstAttribute="top" secondItem="9DZ-qJ-yN1" secondAttribute="bottom" constant="8" id="4Lj-5f-oUA"/>
+                            <constraint firstAttribute="bottom" secondItem="AGN-dl-PaS" secondAttribute="bottom" constant="-204" id="EZS-UH-b9j"/>
+                            <constraint firstItem="AGN-dl-PaS" firstAttribute="leading" secondItem="RzA-kh-zdu" secondAttribute="leading" constant="20" id="ST2-Os-8Ji"/>
+                            <constraint firstItem="9DZ-qJ-yN1" firstAttribute="centerX" secondItem="RzA-kh-zdu" secondAttribute="centerX" id="UNq-JR-H02"/>
+                            <constraint firstItem="RzA-kh-zdu" firstAttribute="trailing" secondItem="AGN-dl-PaS" secondAttribute="trailing" constant="20" id="pXQ-gw-p7K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RzA-kh-zdu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UjD-Pe-XBW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7y-Ue-NdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3916" y="-42"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="get-6A-sGp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mtl-dh-W6q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jA2-MQ-h6t">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jw2-6z-qXc" kind="relationship" relationship="rootViewController" id="SYS-kj-z60"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzd-Ud-9LS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2977" y="-42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="civom_logo" width="1698" height="1436"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+module SamMitiAR {
+  umbrella header "SamMitiAR-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -4,7 +4,7 @@
 //
 //  Created by Chitransh on 25/07/19.
 //  Copyright © 2019 LateralX. All rights reserved.
-//
+//s
 
 import UIKit
 
@@ -17,6 +17,8 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelCat: UILabel!
     @IBOutlet weak var labelDesc: UILabel!
+    
+    @IBOutlet weak var btnSegue: UIButton!
     
     
     override func awakeFromNib() {

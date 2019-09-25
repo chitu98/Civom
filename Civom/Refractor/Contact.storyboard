@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ojz-2H-TBX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ContactVC-->
+        <scene sceneID="jDt-Vc-4Qb">
+            <objects>
+                <viewController id="PaE-AI-fKu" customClass="ContactVC" customModule="Civom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TWg-AP-3FP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i0J-Mh-zFZ">
+                                <rect key="frame" x="0.0" y="0.0" width="27.5" height="548"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="civom_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hjh-Yw-nZ6">
+                                <rect key="frame" x="91" y="163" width="232" height="219"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For any queries, feel free to get in touch wit us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="qPK-fL-xIT">
+                                <rect key="frame" x="82" y="410" width="250" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="W7z-O7-iLt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfu-k8-335">
+                                <rect key="frame" x="48" y="466" width="318" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="keR-cK-VeP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                <state key="normal" title="SEND MAIL">
+                                    <color key="titleColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMail:" destination="PaE-AI-fKu" eventType="touchUpInside" id="bzU-j8-Ekw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAW-rQ-fO8">
+                                <rect key="frame" x="48" y="574" width="318" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="zI0-MU-VDz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                <state key="normal" title="+91- 9876643210">
+                                    <color key="titleColor" red="0.1960784314" green="0.28235294119999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callBtn:" destination="PaE-AI-fKu" eventType="touchUpInside" id="7dc-h7-LmW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="call us" translatesAutoresizingMaskIntoConstraints="NO" id="j7j-NS-Gdk">
+                                <rect key="frame" x="162" y="303" width="50" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Gc2-IM-IOr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qPK-fL-xIT" firstAttribute="top" secondItem="hjh-Yw-nZ6" secondAttribute="bottom" constant="28" id="2pF-X7-oIQ"/>
+                            <constraint firstItem="I6s-qc-YNF" firstAttribute="bottom" secondItem="QAW-rQ-fO8" secondAttribute="bottom" constant="203" id="3S8-Tz-GOy"/>
+                            <constraint firstItem="Yfu-k8-335" firstAttribute="centerX" secondItem="j7j-NS-Gdk" secondAttribute="centerX" id="3cx-9L-K8W"/>
+                            <constraint firstItem="hjh-Yw-nZ6" firstAttribute="centerX" secondItem="TWg-AP-3FP" secondAttribute="centerX" id="6dE-yR-Ofu"/>
+                            <constraint firstItem="hjh-Yw-nZ6" firstAttribute="centerX" secondItem="qPK-fL-xIT" secondAttribute="centerX" id="HqV-d8-x9p"/>
+                            <constraint firstItem="i0J-Mh-zFZ" firstAttribute="top" secondItem="I6s-qc-YNF" secondAttribute="top" id="J2L-OI-NaL"/>
+                            <constraint firstItem="I6s-qc-YNF" firstAttribute="trailing" secondItem="j7j-NS-Gdk" secondAttribute="trailing" constant="163" id="JLh-CP-XK3"/>
+                            <constraint firstItem="j7j-NS-Gdk" firstAttribute="top" secondItem="Yfu-k8-335" secondAttribute="bottom" constant="16" id="L4H-kL-snp"/>
+                            <constraint firstItem="hjh-Yw-nZ6" firstAttribute="leading" secondItem="i0J-Mh-zFZ" secondAttribute="trailing" constant="63.5" id="YvW-1X-S43"/>
+                            <constraint firstItem="hjh-Yw-nZ6" firstAttribute="top" secondItem="I6s-qc-YNF" secondAttribute="top" constant="75" id="dJt-sE-mLf"/>
+                            <constraint firstItem="Yfu-k8-335" firstAttribute="leading" secondItem="i0J-Mh-zFZ" secondAttribute="trailing" constant="20.5" id="dLK-wr-bTh"/>
+                            <constraint firstItem="Yfu-k8-335" firstAttribute="trailing" secondItem="QAW-rQ-fO8" secondAttribute="trailing" id="fBj-aI-aK1"/>
+                            <constraint firstItem="i0J-Mh-zFZ" firstAttribute="centerY" secondItem="TWg-AP-3FP" secondAttribute="centerY" id="gP2-78-4y3"/>
+                            <constraint firstItem="Yfu-k8-335" firstAttribute="top" secondItem="qPK-fL-xIT" secondAttribute="bottom" constant="19" id="hka-Gb-uTW"/>
+                            <constraint firstItem="I6s-qc-YNF" firstAttribute="trailing" secondItem="Yfu-k8-335" secondAttribute="trailing" constant="48" id="kS3-r9-084"/>
+                            <constraint firstItem="Yfu-k8-335" firstAttribute="leading" secondItem="QAW-rQ-fO8" secondAttribute="leading" id="nJY-K2-53W"/>
+                            <constraint firstItem="qPK-fL-xIT" firstAttribute="centerX" secondItem="Yfu-k8-335" secondAttribute="centerX" id="pQ7-j1-kxq"/>
+                            <constraint firstItem="i0J-Mh-zFZ" firstAttribute="leading" secondItem="I6s-qc-YNF" secondAttribute="leading" id="q53-AI-1DY"/>
+                            <constraint firstItem="qPK-fL-xIT" firstAttribute="leading" secondItem="i0J-Mh-zFZ" secondAttribute="trailing" constant="54.5" id="yoN-MA-iZJ"/>
+                            <constraint firstItem="QAW-rQ-fO8" firstAttribute="top" secondItem="j7j-NS-Gdk" secondAttribute="bottom" constant="16" id="z8F-HE-9Oo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I6s-qc-YNF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aro-eX-eVF">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Joh-YW-iuV"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q33-Gn-Vv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="1650"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b6l-Nw-tYx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ojz-2H-TBX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="user" id="9LL-g3-uE3">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-15"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CI9-JF-tms">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PaE-AI-fKu" kind="relationship" relationship="rootViewController" id="aRd-Gg-Ipo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enu-O9-Ivf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="1650"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="call us" width="512" height="512"/>
+        <image name="civom_logo" width="1698" height="1436"/>
+        <image name="user" width="29" height="37.5"/>
+    </resources>
+</document>
